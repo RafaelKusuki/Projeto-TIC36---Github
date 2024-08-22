@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #424242;
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+  
+  footer {
+    background-color: #000000;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.titulo-logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 10vh;
+}
+
+.titulo-logo h1 {
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    box-shadow: 3px 1px solid #000000;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    display:flex ;
+    align-items: center;
+    justify-content:center ;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 50%;
+}
+
+.menu ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    
+}
+
+.menu li :hover {
+    color: #000000;
+}
+
+.butao-menu {
+    background-color: #000000;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.butao-menu:hover {
+    background-color: #fafafa;
+    color: #000000;
+}
+
+.config {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+}
+
+.config img {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+}
+
+.config img:hover {
+    transform: rotate(20deg);
+}
+
+
+.roda-pe p {
+    margin: 0;
+    text-align: center;
+}
+
+.conteiner-fundo{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 210px 550px;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.niveis-fundo button a{
+    background-color: #00315c;
+    display: flex;
+}
+
+.container-niveis {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.nivel-painel {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.nivel-painel h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.botao-iniciar {
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-iniciar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-iniciar:hover {
+    background-color: #ffffff;
+    color: #00315c;
+}
+
+.botao-iniciar a:hover {
+    color: #000000;
+}
+
+.botao-voltar {
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-voltar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-voltar:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.botao-voltar a:hover {
+    color: #000000;
+}
+
+.container-quest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+}
+
+.quest h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.resolucao-barra {
+    background-color: #000000;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.resolucao-barra p {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.teclado-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.teclado-botoes button {
+    background-color: #424242;
+    padding: 10px 15px;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.teclado-botoes button:hover {
+    background-color: #333;
+}
+
+.botao-voltar, .botao-nivel2 {
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.botao-voltar a, .botao-nivel2 a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-voltar:hover, .botao-nivel2:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.botao-voltar a:hover, .botao-nivel2 a:hover {
+    color: #000000;
+}
+
+.roda-pe p {
+    margin: 0;
+    text-align: center;
+}
+
+#resolucao.correto {
+    color: green;
+}
+
+#resolucao.incorreto {
+    color: red;
+}
+
+.botao-nivel2, .botao-nivel3 {
+    background-color: #28a745;
+    margin-left: 20px;
+    display: none; /* Inicialmente oculto */
+}
+
+.botao-nivel2.show, .botao-nivel3.show {
+    display: inline-block; /* Exibe quando a classe .show é adicionada */
+}
+
+.botao-vitoria {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.botao-vitoria:hover {
+    background-color: #ffffff;
+    color: #28a745;
+}
+
+.container-credito {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo do fundo de créditos */
+.fundo-credito h1 {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Estilo do parágrafo de créditos */
+.container-credito p {
+    font-size: 20px;
+}
+
+/* Estilo das imagens */
+.imgs {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#cao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 2; /* Garante que #cao esteja sobre #hack */
+}
+
+#hack {
+    width: 400px;
+}
